@@ -1,0 +1,24 @@
+<!-- vi: set ts=4 sw=4 et: -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='get_city.css'/>
+    </head>
+    <body>
+        <div id='popup-content'>
+            <form action='https://www.elvenarchitect.com/city/planner/' method='post' target='_blank'>
+                <input id='elvenarchitect' type='hidden' name='import' value=''>
+                <button type='submit' class="button">&#x1F4D0;&#x1F4CF;</button>
+            </form>
+            <a id='elvenstats' href='https://www.elvenstats.com/' target='_blank'>
+            <div class='button'>&#x1F4C8; &#x1F4CA;</div>
+            </a>
+            <a id='download_city' href='' download='city.txt'>
+            <div class='button'>&#x1F4E5;</div>
+            </a>
+            <div class='button' id='refresh_city'>&#x21BB;</div>
+        </div>
+        <script src='get_city.js'></script>
+    </body>
+</html>

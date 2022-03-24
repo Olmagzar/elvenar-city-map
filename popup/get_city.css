@@ -1,0 +1,29 @@
+html, body {
+    width: 60px;
+}
+
+.button {
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #add8e6;
+}
+
+.button:active {
+    background-color: #9bc4e2;
+}
+
+.noButton {
+    text-align: center;
+    font-size: 1em;
+    cursor: not-allowed;
+}
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}

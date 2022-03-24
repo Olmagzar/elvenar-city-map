@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "Elvenar City Map",
+    "version": "1.0",
+
+    "description": "Retrieve one's own city to upload it to ElvenArchitect or to download it as a file",
+    "homepage_url": "https://github.com/olmagzar/elvenar-city-map",
+
+    "icons": {
+        "16": "icon.svg",
+        "24": "icon.svg",
+        "32": "icon.svg",
+        "48": "icon.svg",
+        "96": "icon.svg"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "page_action": {
+        "browser_style": true,
+        "default_icon": {
+            "16": "icon.svg",
+            "24": "icon.svg",
+            "32": "icon.svg",
+            "48": "icon.svg",
+            "96": "icon.svg"
+        },
+        "default_title": "Elvenar City Map",
+        "default_popup": "popup/get_city.html",
+        "show_matches": ["*://*.elvenar.com/game*"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.elvenar.com/game*"],
+            "js": ["content.js"]
+        }
+    ]
+}
