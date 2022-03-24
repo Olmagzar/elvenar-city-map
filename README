@@ -1,0 +1,29 @@
+This is a firefox extension to directly download one's own city from the game
+webpage.
+It uses the player game generated hash credentials to request the details of the
+city and filter it to only keep:
+- city buildings and unlocked areas     (EA/DL)
+- city race                             (EA/DL)
+- cultural bonus                        (EA/DL)
+- completed provinces                   (EA/DL)
+- squadsize                             (EA/DL)
+- relics count                          (EA/DL)
+- relics boosts                         (EA/DL)
+- encounter and tournament points       (EA/DL)
+- username                              (DL)
+- player_id                             (ES)
+- world/country                         (ES/DL)
+
+Note: EA=ElvenArchitect usage, DL=Download usage, ES=ElvenStats usage.
+
+The menu is displayed when the extension is clicked, in the url address bar,
+suggesting to:
+1. Upload one's own city to ElvenArchitect with cultural bonus set, squadsize
+   set, relics details filled, etc.
+2. Open one's own ElvenStats profile in a new tab thanks to the player_id and
+   world informations, if the profile already exists (ElvenStats updates about
+   once a week)
+3. Download one's own city in a file. The format is the same as the one
+   supported by ElvenArchitect, a base64 encoded json structure.
+4. Refresh the stored representation of one's own city to get the last changes
+   the player made since the last refresh or the start of the game.
